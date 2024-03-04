@@ -13,6 +13,6 @@ void ft_putnbr(int nb)
     }
     if (nb / 10 )
         ft_putnbr(nb / 10);
-    c = (n % 10) + 48;
+    c = (nb % 10) + 48;
     ft_putchar(c);
 }
