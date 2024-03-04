@@ -4,7 +4,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-void    ft_putnbr(int nb);
-void    ft_putchar(char c);
+int ft_putnbr(int nb);
+int ft_putchar(char c);
+int ft_putstr(char *s);
 
 #endif
