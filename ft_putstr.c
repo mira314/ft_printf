@@ -1,13 +1,16 @@
 #include "ft_printf.h"
 
-void	ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
 	int	i;
+	int	count;
 
+	count = 0;
 	i = 0;
 	while (s[i] != 0)
 	{
-		ft_putchar_fd(s[i]);
+	count += ft_putchar(s[i]);
 		i++;
 	}
+	return (count);
 }
