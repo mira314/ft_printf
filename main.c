@@ -8,7 +8,7 @@ int main()
     
     int nb;
     
-    nb = ft_putstr("-9223372036854775808");
+    nb = ft_putnbr("-2147483648");
     
     printf(" nb est %d",nb);
 }

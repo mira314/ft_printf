@@ -20,8 +20,8 @@ int	ft_putnbr(int nb)
 	i = 0;
 	if (nb == -2147483648)
 	{
-		write(1, "-2147483648", 11);
-		return (11);
+		i += ft_putnbr("-2147483648");
+		retourn (i);
 	}
 	if (nb < 0)
 	{
