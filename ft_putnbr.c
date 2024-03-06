@@ -41,32 +41,4 @@ int	ft_putnbr(int nb)
 	return (i);
 }
 
-int	ft_putnbr_i(long nb)
-{
-	char	c;
-	long		i;
-
-	i = 0;
-	if (nb == -9223372036854775808)
-	{
-		write(1, "-9223372036854775808", 11);
-		return (11);
-	}
-	if (nb < 0)
-	{
-		i += ft_putchar('-');
-		i += ft_putnbr(-nb);
-	}
-	if (nb > 9)
-	{
-		i += ft_putnbr(nb / 10);
-		i += ft_putnbr(nb % 10);
-	}
-	if (nb >= 0 && nb < 10)
-	{
-		c = nb + 48;
-		i += ft_putchar(c);
-	}
-	return (i);
-}
 	
