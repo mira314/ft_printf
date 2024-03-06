@@ -14,5 +14,5 @@ int ft_puthex(unsigned int nb, char *hex)
      {
         count += ft_putnbr(hex[nb]);
      }
-     retourn (count);
+     return (count);
 }
