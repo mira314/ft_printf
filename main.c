@@ -8,7 +8,8 @@ int main()
     
     int nb;
     
-    nb = ft_putnbr(-2147483648);
+   // nb = ft_putnbr(-2147483648);
     
-    printf(" nb est %d",nb);
+    printf(" l'original %c \n",'a');
+    nb  = ft_printf(" copy %c \n",'a');
 }

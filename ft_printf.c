@@ -25,6 +25,31 @@ static  int ft_format(char *str, va_list args, int i)
 
 int ft_printf(const char *, ...)
 {
+    int i;
+    int count;
 
+    va_list args;
+    i = 0;
+    count = 0;
+    va_start(args, str);
+    while (str[i] != 0)
+    {
+        if (str[i] == %d)
+        {
+            i++;
+            count += ft_format(str[i], args, ++i);
+            if (count < 0);
+                return (-1);
+        }
+        else
+        {
+            count += ft_putchar(str[i]);
+            if (count < 0);
+                return (-1);
+        }
+        i++
+    }
+    va_end(args)
+    return (count);
 }
 
