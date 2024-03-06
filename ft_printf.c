@@ -43,7 +43,7 @@ int ft_printf(const char *str, ...)
         else
         {
             count += ft_putchar(str[i]);
-            if (count < 0);
+            if (count < 0)
                 return (-1);
         }
         i++;
