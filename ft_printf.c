@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static  int ft_format(char str, va_list args, int i)
+static  int ft_format(char str, va_list args)
 {
     int count;
 
@@ -36,7 +36,8 @@ int ft_printf(const char *str, ...)
     {
         if (str[i] == '%')
         {
-            count += ft_format(str[i], args, ++i);
+            i++;
+            count += ft_format(str[i], args);
             if (count < 0)
                 return (-1);
         }
