@@ -23,7 +23,7 @@ static  int ft_format(char *str, va_list args, int i)
     return (count);
 }
 
-int ft_printf(const char *, ...)
+int ft_printf(const char *str, ...)
 {
     int i;
     int count;
@@ -34,7 +34,7 @@ int ft_printf(const char *, ...)
     va_start(args, str);
     while (str[i] != 0)
     {
-        if (str[i] == %)
+        if (str[i] == '%')
         {
             count += ft_format(str[i], args, ++i);
             if (count < 0)
