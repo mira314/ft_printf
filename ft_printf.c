@@ -34,11 +34,10 @@ int ft_printf(const char *, ...)
     va_start(args, str);
     while (str[i] != 0)
     {
-        if (str[i] == %d)
+        if (str[i] == %)
         {
-            i++;
             count += ft_format(str[i], args, ++i);
-            if (count < 0);
+            if (count < 0)
                 return (-1);
         }
         else
@@ -47,7 +46,7 @@ int ft_printf(const char *, ...)
             if (count < 0);
                 return (-1);
         }
-        i++
+        i++;
     }
     va_end(args)
     return (count);
