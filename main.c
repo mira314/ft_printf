@@ -1,13 +1,14 @@
 #include "ft_printf.h"
 #include <stdio.h>
 
+
 int main()
 {
     char str[] = "mirado";
-    char a = 'a';
+    
     int nb;
     
-    nb = ft_putstr(str);
+    nb = ft_putstr("-9223372036854775808");
     
-    printf("nb est %d",nb);
+    printf(" nb est %d",nb);
 }

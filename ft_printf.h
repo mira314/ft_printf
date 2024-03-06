@@ -17,6 +17,7 @@
 # include <unistd.h>
 
 int	ft_putnbr(int nb);
+int	ft_putnbr_i(long nb);
 int	ft_putchar(char c);
 int	ft_putstr(char *s);
 
