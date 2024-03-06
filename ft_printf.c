@@ -12,3 +12,19 @@
 
 #include "ft_printf.h"
 
+static  int ft_format(char *str, va_list args, int i)
+{
+    int count;
+
+    count = 0;
+
+    if (str[i] == 'c')
+        count += ft_putchar((char) var_arg(args, int));
+    return (count);
+}
+
+int ft_printf(const char *, ...)
+{
+
+}
+

@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+int ft_printf(const char *, ...);
 int	ft_putnbr(int nb);
 int	ft_putnbr_u(long nb);
 int	ft_putchar(char c);
