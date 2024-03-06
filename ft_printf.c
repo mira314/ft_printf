@@ -18,7 +18,7 @@ static  int ft_format(char str, va_list args)
 
     count = 0;
 
-    if (str[i] == 'c')
+    if (str == 'c')
         count += ft_putchar((char) va_arg(args, int));
     return (count);
 }
