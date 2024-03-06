@@ -20,7 +20,9 @@ static  int ft_format(char str, va_list args)
     if (str == 'c')
         count += ft_putchar((char) va_arg(args, int));
     else if (str = 's')
-        count += ft_putstr((char *) va_arg(args, char *))
+        count += ft_putstr((char *) va_arg(args, char *));
+    else if (str = 'd' || 'i')
+        count += ft_putnbr((int) va_arg(args, int));
     return (count);
 }
 

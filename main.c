@@ -10,6 +10,6 @@ int main()
     
    // nb = ft_putnbr(-2147483648);
     
-    printf(" l'original %s \n","ok");
-    nb  = ft_printf("copy %s \n","ok aussi");
+    printf(" l'original %d \n",111);
+    nb  = ft_printf("copy %d \n",19888);
 }
