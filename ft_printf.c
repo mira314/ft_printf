@@ -28,9 +28,9 @@ static	int	ft_format(char str, va_list args)
 		count += ft_puthex_l((unsigned int) va_arg(args, unsigned int));
 	else if (str == 'X')
 		count += ft_puthex_u((unsigned int) va_arg(args, unsigned int));
-	else if (str == '%')
-		count += ft_print_ptr((uintptr_t) va_arg(args, uintptr_t));
 	else if (str == 'p')
+		count += ft_print_ptr((uintptr_t) va_arg(args, uintptr_t));
+	else if (str == '%')
 		count += ft_putchar('%');
 	return (count);
 }
