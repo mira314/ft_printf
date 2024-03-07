@@ -24,5 +24,6 @@ int	ft_putstr(char *s);
 int	ft_puthex_l(unsigned int nb);
 int	ft_puthex_u(unsigned int nb);
 int	ft_putnbr_unsigned(unsigned int nb);
+int ft_print_ptr(uintptr_t ptr);
 
 #endif
