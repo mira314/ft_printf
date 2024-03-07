@@ -5,12 +5,18 @@ CC = gcc
 FLAGS = -Wall -Wextra -Werror
 
 all: ${NAME}
+
 %.o: %.c
-  $(CC) $(FLAGS) -o $@ -c $?
-${NAME}:  ${OBJS} 
-                ar rcs ${NAME} ${OBJS}
+
+	$(CC) $(FLAGS) -o $@ -c $?
+  
+${NAME}:  $(OBJS) 
+	ar rcs $(NAME) $(OBJS)
+	
 clean:
-      rm -f ${OBJS}
+	rm -f ${OBJS}
+	
 fclean: clean
-      rm -f ${NAME}   
+	rm -f ${NAME}   
+	
 re:  fclean

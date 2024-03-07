@@ -41,4 +41,21 @@ int	ft_putnbr(int nb)
 	return (i);
 }
 
-	
+int	ft_putnbr_unsigned(unsigned int nb)
+{
+	char			c;
+	unsigned int	i;
+
+	i = 0;
+	if (nb > 9)
+	{
+		i += ft_putnbr(nb / 10);
+		i += ft_putnbr(nb % 10);
+	}
+	if (nb < 10)
+	{
+		c = nb + 48;
+		i += ft_putchar(c);
+	}
+	return (i);
+}
