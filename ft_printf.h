@@ -15,7 +15,7 @@
 # include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
-
+# include <stdint.h>
 int	ft_printf(const char *str, ...);
 int	ft_putnbr(int nb);
 int	ft_putnbr_u(long nb);
