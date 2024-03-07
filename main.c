@@ -6,10 +6,11 @@ int main()
 {
     char str[] = "mirado";
     
-    int nb;
+    unsigned int nb;
     
+    nb = -545215584;
    // nb = ft_putnbr(-2147483648);
     
-    printf(" l'original %d \n",111);
-    nb  = ft_printf("copy %d \n",19888);
+    printf("l'original %X %u %% \n",nb, nb);
+    ft_printf("copy	   %X %u %% \n",nb, nb);
 }
