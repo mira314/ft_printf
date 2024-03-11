@@ -33,6 +33,10 @@ int	ft_print_ptr(uintptr_t ptr)
 	int	count;
 
 	count = 0;
+	if (!ptr)
+	{
+		return (ft_putstr("(nil)"));
+	}
 	count += ft_putstr("0x");
 	if (count < 0)
 		return (-1);
