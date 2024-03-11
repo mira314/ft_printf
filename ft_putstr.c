@@ -19,7 +19,7 @@ int	ft_putstr(char *s)
 
 	count = 0;
 	i = 0;
-	if (!*str)
+	if (!s)
 		return(ft_putstr("(null)"));
 	while (s[i] != 0)
 	{
