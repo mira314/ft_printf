@@ -9,7 +9,7 @@
 /*   Updated: 2024/03/07 10:21:15 by vrandria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "ft_printf.h"
+#include "ft_pridntf.h"
 
 static	int	ft_format(char str, va_list args)
 {
